@@ -8,9 +8,9 @@ const products = [
     {
         id: 1,
         type: 1,
-        name: 'X-Egg',
-        description: 'Pão, hamburger, ovo, queijo prato, alface, tomate e molho especial.',
-        price: 14.00,
+        name: 'Carne de Sol com Batata',
+        description: '',
+        price: 35.00,
         lastPrice: 0,
         img: 'burger.png'
     },
