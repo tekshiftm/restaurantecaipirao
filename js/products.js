@@ -17,30 +17,22 @@ const products = [
     {
         id: 2,
         type: 1,
-        name: 'X-Salada',
-        description: 'Pão, hamburger, presunto, picles, alface, tomate e molho especial.',
-        price: 16.00,
+        name: 'Frango ao Queijo',
+        description: '',
+        price: 35.00,
         lastPrice: 0,
         img: 'burger.png'
     },
     {
         id: 3,
         type: 1,
-        name: 'X-Bacon',
-        description: 'Pão, hamburger, ovo, bacon, queijo prato, presunto, cebola caramelizada e molho especial.',
-        price: 18.00,
+        name: 'Batata Frita',
+        description: '',
+        price: 15.00,
         lastPrice: 0,
         img: 'burger.png'
     },
-    {
-        id: 4,
-        type: 1,
-        name: 'X-Tudo',
-        description: 'Pão, hamburger, ovo, bacon, queijo prato, presunto, cebola caramelizada, picles, alface, tomate e molho especial.',
-        price: 25.00,
-        lastPrice: 0,
-        img: 'xtudo.png'
-    },
+
     {
         id: 101,
         type: 2,
@@ -68,31 +60,87 @@ const products = [
         lastPrice: 75.00,
         img: 'combo.png'
     },
+
+    {
+        id: 150,
+        type: 3,
+        name: 'Arroz',
+        description: '',
+        price: 10.00,
+        lastPrice: 0,
+        img: 'combo.png'
+    },
+    {
+        id: 151,
+        type: 3,
+        name: 'Macarrão',
+        description: '',
+        price: 10.00,
+        lastPrice: 0,
+        img: 'combo.png'
+    },
+    {
+        id: 152,
+        type: 3,
+        name: 'Salada',
+        description: '',
+        price: 8.00,
+        lastPrice: 0,
+        img: 'combo.png'
+    },
+    {
+        id: 153,
+        type: 3,
+        name: 'Farofa',
+        description: '',
+        price: 6.00,
+        lastPrice: 0,
+        img: 'combo.png'
+    },
+
     {
         id: 301,
         type: 4,
         name: 'Coca-Cola Lata',
         description: '1 coca-cola lata.',
-        price: 6.00,
+        price: 5.00,
         lastPrice: 0,
         img: 'cocacola.png'
     },
     {
         id: 302,
         type: 4,
-        name: 'Fanta Laranja Lata',
-        description: '1 fanta laranja lata.',
-        price: 5.00,
+        name: 'Refrigerante 1 litro',
+        description: '1 refrigerante - 1 litro',
+        price: 8.00,
         lastPrice: 0,
-        img: 'fanta.png'
+        img: 'refrigerante1litro.png'
     },
     {
         id: 303,
         type: 4,
-        name: 'Pepsi Lata',
-        description: '1 pepsi lata.',
-        price: 4.50,
+        name: 'Água sem gás 500ml',
+        description: '1 água SEM gás 500ml',
+        price: 2.00,
         lastPrice: 0,
-        img: 'pepsi.png'
+        img: 'aguamineral.png'
+    },
+    {
+        id: 304,
+        type: 4,
+        name: 'Água com gás 500ml',
+        description: '1 água COM gás 500ml',
+        price: 2.50,
+        lastPrice: 0,
+        img: 'aguamineral.png'
+    },
+    {
+        id: 305,
+        type: 4,
+        name: 'Cerveja 300ml',
+        description: '1 cerveja 300ml',
+        price: 5.00,
+        lastPrice: 0,
+        img: 'cerveja300ml.png'
     },
 ]
