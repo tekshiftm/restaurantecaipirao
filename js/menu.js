@@ -1,44 +1,46 @@
-// Getting grom HTML
-const menu = document.querySelector('#showMenu')
-const promotions = document.querySelector('#showPromotions')
+// Getting from HTML
+const menu = document.querySelector('#showMenu');
+const promotions = document.querySelector('#showPromotions');
 
 // Buttons show menu
-const showAll = document.querySelector('#showAll')
-const showSnacks = document.querySelector('#showSnacks')
-const showCombos = document.querySelector('#showCombos')
-const showPortions = document.querySelector('#showPortions')
-const showDrinks = document.querySelector('#showDrinks')
+const showAll = document.querySelector('#showAll');
+const showSnacks = document.querySelector('#showSnacks');
+const showCombos = document.querySelector('#showCombos');
+const showPortions = document.querySelector('#showPortions');
+const showDrinks = document.querySelector('#showDrinks');
+const showMeals = document.querySelector('#showMeals'); // Novo botão "Refeições"
 
 // Items
-let items
+let items;
 
 // Functions
 const clearItems = type => {
-    items = ''
+    items = '';
 
     if (type === 'normal')
-        menu.innerHTML = ''
+        menu.innerHTML = '';
     else
-        promotions.innerHTML = ''
+        promotions.innerHTML = '';
 }
 
 const removeClasses = () => {
-    showAll.classList.remove('active')
-    showSnacks.classList.remove('active')
-    showCombos.classList.remove('active')
-    showPortions.classList.remove('active')
-    showDrinks.classList.remove('active')
+    showAll.classList.remove('active');
+    showSnacks.classList.remove('active');
+    showCombos.classList.remove('active');
+    showPortions.classList.remove('active');
+    showDrinks.classList.remove('active');
+    showMeals.classList.remove('active'); // Novo botão
 }
 
 const checkIfHaveItem = items => {
     if (items === '')
-        menu.innerHTML = '<p>Nenhum produto encontrado!</p>'
+        menu.innerHTML = '<p>Nenhum produto encontrado!</p>';
     else
-        menu.innerHTML = items
+        menu.innerHTML = items;
 }
 
 const addItemToArray = prod => {
-    let price = prod.price.toFixed(2).toString().replace('.', ',')
+    let price = prod.price.toFixed(2).toString().replace('.', ',');
 
     items +=
         `<div class="card">
@@ -55,46 +57,48 @@ const addItemToArray = prod => {
                     <span class="iconify-inline" data-icon="mdi:cart-plus"></span> Adicionar
                 </button>
             </div>
-        </div>`
+        </div>`;
 }
 
 const showProducts = type => {
-    clearItems('normal')
+    clearItems('normal');
 
     if (type === 0) {
         products.forEach(prod => {
             if (prod.lastPrice === 0)
-                addItemToArray(prod)
-        })
+                addItemToArray(prod);
+        });
     } else {
         products.forEach(prod => {
             if (prod.type === type && prod.lastPrice === 0)
-                addItemToArray(prod)
-        })
+                addItemToArray(prod);
+        });
     }
 
-    checkIfHaveItem(items)
-    removeClasses()
+    checkIfHaveItem(items);
+    removeClasses();
 
     if (type === 0)
-        showAll.classList.add('active')
-    else if (type === 1)
-        showSnacks.classList.add('active')
+        showAll.classList.add('active');
     else if (type === 2)
-        showCombos.classList.add('active')
+        showSnacks.classList.add('active');
     else if (type === 3)
-        showPortions.classList.add('active')
+        showCombos.classList.add('active');
     else if (type === 4)
-        showDrinks.classList.add('active')
+        showPortions.classList.add('active');
+    else if (type === 5)
+        showDrinks.classList.add('active');
+    else if (type === 1)  // Novo caso para "Refeições"
+        showMeals.classList.add('active');
 }
 
 const allPromotions = () => {
-    clearItems('promotions')
+    clearItems('promotions');
 
     products.forEach(prod => {
         if (prod.lastPrice && prod.lastPrice != 0) {
-            let price = prod.price.toFixed(2).toString().replace('.', ',')
-            let lastPrice = prod.lastPrice.toFixed(2).toString().replace('.', ',')
+            let price = prod.price.toFixed(2).toString().replace('.', ',');
+            let lastPrice = prod.lastPrice.toFixed(2).toString().replace('.', ',');
 
             items +=
             `<div class="card">
@@ -112,22 +116,25 @@ const allPromotions = () => {
                         <span class="iconify-inline" data-icon="mdi:cart-plus"></span> Adicionar
                     </button>
                 </div>
-            </div>`
+            </div>`;
         }
-    })
+    });
 
     if (items === '')
-        promotions.innerHTML = '<p>Nenhuma promoção hoje, tente novamente amanhã! =(</p>'
+        promotions.innerHTML = '<p>Nenhuma promoção hoje, tente novamente amanhã! =(</p>';
     else
-        promotions.innerHTML = items
+        promotions.innerHTML = items;
 }
 
-//Capturing button clicks
-showAll.addEventListener('click', function () { showProducts(0) })
-showSnacks.addEventListener('click', function () { showProducts(1) })
-showCombos.addEventListener('click', function () { showProducts(2) })
-showPortions.addEventListener('click', function () { showProducts(3) })
-showDrinks.addEventListener('click', function () { showProducts(4) })
+// Capturing button clicks
+showAll.addEventListener('click', function () { showProducts(0); });
+showMeals.addEventListener('click', function () { showProducts(1); });  // Novo botão "Refeições"
+showSnacks.addEventListener('click', function () { showProducts(2); });
+showCombos.addEventListener('click', function () { showProducts(3); });
+showPortions.addEventListener('click', function () { showProducts(4); });
+showDrinks.addEventListener('click', function () { showProducts(5); });
 
-showProducts(0)
-allPromotions()
+
+// Initial call to show all products and promotions
+showProducts(0);
+allPromotions();
