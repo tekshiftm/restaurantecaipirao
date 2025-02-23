@@ -1,10 +1,12 @@
 // Types:
-// 1 = Snack
-// 2 = Combos
-// 3 = Portions
-// 4 = Drinks
+// 1 = Refeições
+// 2 = Tira Gosto
+// 3 = Sobre Encomenda
+// 4 = Porções
+// 5 = Bebidas
 
 const products = [
+    // Refeições
     {
         id: 400,
         type: 1,
@@ -12,17 +14,126 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'cerveja300ml.png'
+        img: 'favicon.png'
+    },
+    {
+        id: 4001,
+        type: 1,
+        name: 'Filé à Parmegiana (1/2)',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 45.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4002,
+        type: 1,
+        name: 'Filé Surpresa',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 70.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4004,
+        type: 1,
+        name: 'Filé Medalhão',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 70.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4005,
+        type: 1,
+        name: 'Carne de Sol',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 60.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4006,
+        type: 1,
+        name: 'Carne de Sol (1/2)',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 50.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4007,
+        type: 1,
+        name: 'Frango à Parmegiana',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 60.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4008,
+        type: 1,
+        name: 'Frango à Parmegiana (1/2)',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 50.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4009,
+        type: 1,
+        name: 'Frango ao Queijo',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 60.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4010,
+        type: 1,
+        name: 'Frango Surpresa',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 60.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4011,
+        type: 1,
+        name: 'Frango Caipira (À Cabidela)',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 48.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4012,
+        type: 1,
+        name: 'Peixe Frito',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 33.00,
+        lastPrice: 0,
+        img: 'favicon.png'
+    },
+    {
+        id: 4013,
+        type: 1,
+        name: 'Peixe a Delícia',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 38.00,
+        lastPrice: 0,
+        img: 'favicon.png'
     },
 
+    // Tira Gosto
     {
         id: 1,
         type: 2,
-        name: 'Carne de Sol com Batata',
+        name: 'Carne de Sol com Batata Frita',
         description: '',
         price: 35.00,
         lastPrice: 0,
-        img: 'burger.png'
+        img: 'favicon.png'
     },
     {
         id: 2,
@@ -31,7 +142,7 @@ const products = [
         description: '',
         price: 35.00,
         lastPrice: 0,
-        img: 'burger.png'
+        img: 'favicon.png'
     },
     {
         id: 3,
@@ -40,37 +151,39 @@ const products = [
         description: '',
         price: 15.00,
         lastPrice: 0,
-        img: 'burger.png'
+        img: 'batatafrita.png'
     },
 
+    // Sobre Encomenda
     {
-        id: 101,
+        id: 4011,
         type: 3,
-        name: 'Combo Simples',
-        description: '2 x-saladas, 2 coca-cola lata e 2 batatas fritas pequenas.',
-        price: 30.99,
+        name: 'Frango Caipira (À Cabidela)',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 48.00,
         lastPrice: 0,
-        img: 'combo.png'
+        img: 'favicon.png'
     },
     {
-        id: 102,
+        id: 4012,
         type: 3,
-        name: 'Combo Médio',
-        description: '3 x-bacon, 3 coca-cola lata e 3 batatas fritas médias.',
-        price: 45.99,
-        lastPrice: 50.00,
-        img: 'combo.png'
+        name: 'Peixe Frito',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 33.00,
+        lastPrice: 0,
+        img: 'favicon.png'
     },
     {
-        id: 103,
+        id: 4013,
         type: 3,
-        name: 'Combo Grande',
-        description: '4 x-tudo, 3 coca-cola lata e 3 batatas fritas grandes.',
-        price: 68.99,
-        lastPrice: 75.00,
-        img: 'combo.png'
+        name: 'Peixe a Delícia',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 38.00,
+        lastPrice: 0,
+        img: 'favicon.png'
     },
 
+    // Porções
     {
         id: 150,
         type: 4,
@@ -78,7 +191,7 @@ const products = [
         description: '',
         price: 10.00,
         lastPrice: 0,
-        img: 'combo.png'
+        img: 'favicon.png'
     },
     {
         id: 151,
@@ -87,7 +200,7 @@ const products = [
         description: '',
         price: 10.00,
         lastPrice: 0,
-        img: 'combo.png'
+        img: 'favicon.png'
     },
     {
         id: 152,
@@ -96,18 +209,19 @@ const products = [
         description: '',
         price: 8.00,
         lastPrice: 0,
-        img: 'combo.png'
+        img: 'favicon.png'
     },
     {
-        id: 153,
+        id: 6001,
         type: 4,
-        name: 'Frango Caipira',
-        description: 'Á cabidela',
-        price: 0.00,
+        name: 'Farofa',
+        description: '',
+        price: 6.00,
         lastPrice: 0,
-        img: 'combo.png'
+        img: 'favicon.png'
     },
 
+    // Bebidas
     {
         id: 301,
         type: 5,
@@ -153,6 +267,4 @@ const products = [
         lastPrice: 0,
         img: 'cerveja300ml.png'
     },
-
-
-]
+];
