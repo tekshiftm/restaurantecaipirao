@@ -10,11 +10,11 @@ const products = [
     {
         id: 400,
         type: 1,
-        name: 'Bife à Parmegiana',
+        name: 'Filé à Parmegiana',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'fileaparmegiana.png'
     },
     {
         id: 4001,
@@ -23,7 +23,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'fileaparmegiana.png'
     },
     {
         id: 4002,
@@ -57,7 +57,7 @@ const products = [
         type: 1,
         name: 'Carne de Sol (1/2)',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 50.00,
+        price: 45.00,
         lastPrice: 0,
         img: 'favicon.png'
     },
@@ -68,14 +68,14 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'frangoaparmegiana.png'
     },
     {
         id: 4008,
         type: 1,
         name: 'Frango à Parmegiana (1/2)',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 50.00,
+        price: 45.00,
         lastPrice: 0,
         img: 'favicon.png'
     },
@@ -97,33 +97,7 @@ const products = [
         lastPrice: 0,
         img: 'favicon.png'
     },
-    {
-        id: 4011,
-        type: 1,
-        name: 'Frango Caipira (À Cabidela)',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 48.00,
-        lastPrice: 0,
-        img: 'favicon.png'
-    },
-    {
-        id: 4012,
-        type: 1,
-        name: 'Peixe Frito',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 33.00,
-        lastPrice: 0,
-        img: 'favicon.png'
-    },
-    {
-        id: 4013,
-        type: 1,
-        name: 'Peixe a Delícia',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 38.00,
-        lastPrice: 0,
-        img: 'favicon.png'
-    },
+
 
     // Tira Gosto
     {
@@ -158,27 +132,27 @@ const products = [
     {
         id: 4011,
         type: 3,
-        name: 'Frango Caipira (À Cabidela)',
+        name: 'Frango Caipira (À Cabidela) EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 48.00,
+        price: 0.00,
         lastPrice: 0,
         img: 'favicon.png'
     },
     {
         id: 4012,
         type: 3,
-        name: 'Peixe Frito',
+        name: 'Peixe Frito EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 33.00,
+        price: 0.00,
         lastPrice: 0,
         img: 'favicon.png'
     },
     {
         id: 4013,
         type: 3,
-        name: 'Peixe a Delícia',
+        name: 'Peixe a Delícia EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 38.00,
+        price: 70.00,
         lastPrice: 0,
         img: 'favicon.png'
     },
