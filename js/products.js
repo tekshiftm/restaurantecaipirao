@@ -14,7 +14,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'fileaparmegiana.png'
+        img: 'fileparmegiano.png'
     },
     {
         id: 4001,
@@ -23,7 +23,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'fileaparmegiana.png'
+        img: 'fileparmegiano.png'
     },
     {
         id: 4002,
@@ -32,7 +32,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 70.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'filesurpresa.png'
     },
     {
         id: 4004,
@@ -50,7 +50,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'carnedesol.png'
     },
     {
         id: 4006,
@@ -68,7 +68,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'frangoaparmegiana.png'
+        img: 'parmegianedefrango.png'
     },
     {
         id: 4008,
@@ -77,7 +77,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'parmegianedefrango.png'
     },
     {
         id: 4009,
@@ -86,7 +86,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'frangoaoqueijo.png'
     },
     {
         id: 4010,
@@ -95,7 +95,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'filesurpresa.png'
     },
 
 
@@ -145,7 +145,7 @@ const products = [
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 0.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'peixefritoen.png'
     },
     {
         id: 4013,
