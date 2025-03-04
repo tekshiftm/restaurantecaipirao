@@ -1,19 +1,15 @@
-// Getting from HTML
 const menu = document.querySelector('#showMenu');
 const promotions = document.querySelector('#showPromotions');
 
-// Buttons show menu
 const showAll = document.querySelector('#showAll');
 const showSnacks = document.querySelector('#showSnacks');
 const showCombos = document.querySelector('#showCombos');
 const showPortions = document.querySelector('#showPortions');
 const showDrinks = document.querySelector('#showDrinks');
-const showMeals = document.querySelector('#showMeals'); // Novo botão "Refeições"
+const showMeals = document.querySelector('#showMeals');
 
-// Items
 let items;
 
-// Functions
 const clearItems = type => {
     items = '';
 
@@ -29,7 +25,7 @@ const removeClasses = () => {
     showCombos.classList.remove('active');
     showPortions.classList.remove('active');
     showDrinks.classList.remove('active');
-    showMeals.classList.remove('active'); // Novo botão
+    showMeals.classList.remove('active');
 }
 
 const checkIfHaveItem = items => {
@@ -88,7 +84,7 @@ const showProducts = type => {
         showPortions.classList.add('active');
     else if (type === 5)
         showDrinks.classList.add('active');
-    else if (type === 1)  // Novo caso para "Refeições"
+    else if (type === 1)
         showMeals.classList.add('active');
 }
 
@@ -126,15 +122,15 @@ const allPromotions = () => {
         promotions.innerHTML = items;
 }
 
-// Capturing button clicks
+
 showAll.addEventListener('click', function () { showProducts(0); });
-showMeals.addEventListener('click', function () { showProducts(1); });  // Novo botão "Refeições"
+showMeals.addEventListener('click', function () { showProducts(1); });
 showSnacks.addEventListener('click', function () { showProducts(2); });
 showCombos.addEventListener('click', function () { showProducts(3); });
 showPortions.addEventListener('click', function () { showProducts(4); });
 showDrinks.addEventListener('click', function () { showProducts(5); });
 
 
-// Initial call to show all products and promotions
+
 showProducts(0);
 allPromotions();

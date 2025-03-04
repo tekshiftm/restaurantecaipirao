@@ -121,7 +121,7 @@ const chooseDelivery = option => {
         btnWantDelivery.classList.add('active')
         btnDontWantDelivery.classList.remove('active')
 
-        deliveryValue = 3
+        deliveryValue = 3.50
     } else {
         btnWantDelivery.classList.remove('active')
         btnDontWantDelivery.classList.add('active')
