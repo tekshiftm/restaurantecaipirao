@@ -14,7 +14,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'fileparmegiano.png'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4001,
@@ -23,7 +23,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'fileparmegiano.png'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4002,
@@ -32,7 +32,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 70.00,
         lastPrice: 0,
-        img: 'filesurpresa.png'
+        img: 'filesurpresa.jpeg'
     },
     {
         id: 4004,
@@ -68,7 +68,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'parmegianedefrango.png'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4008,
@@ -77,7 +77,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'parmegianedefrango.png'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4009,
@@ -95,7 +95,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'filesurpresa.png'
+        img: 'filesurpresa.jpeg'
     },
 
 
