@@ -179,7 +179,7 @@ const products = [
         type: 3,
         name: 'Buffet Completo EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA, FAROFA e PORCO',
-        price: 70.00,
+        price: 0.00,
         lastPrice: 0,
         img: 'buffetcompleto.jpeg'
     },
