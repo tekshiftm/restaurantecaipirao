@@ -118,15 +118,6 @@ const products = [
         lastPrice: 0,
         img: 'batatafrita.png'
     },
-    {
-        id: 4,
-        type: 2,
-        name: 'Filé  trinchado com fritas',
-        description: '',
-        price: 0.00,
-        lastPrice: 0,
-        img: 'Filétrinchadocomfritas.jpeg'
-    },
 
     // Sobre Encomenda
     {
