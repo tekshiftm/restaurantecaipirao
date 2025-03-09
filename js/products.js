@@ -59,7 +59,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'carnedesol12.jpeg'
     },
     {
         id: 4007,
@@ -86,7 +86,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'filesurpresa.jpeg'
+        img: 'frangosurpresa.jpeg'
     },
 
 
@@ -161,11 +161,29 @@ const products = [
     {
         id: 150,
         type: 4,
-        name: 'Arroz',
+        name: 'Arroz Branco',
         description: '',
-        price: 10.00,
+        price: 8.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'arrozbranco.jpeg'
+    },
+    {
+        id: 153,
+        type: 4,
+        name: 'Arroz à Grega',
+        description: '',
+        price: 8.00,
+        lastPrice: 0,
+        img: 'arrozagrega.jpeg'
+    },
+    {
+        id: 154,
+        type: 4,
+        name: 'Feijão',
+        description: '',
+        price: 6.00,
+        lastPrice: 0,
+        img: 'feijao.jpeg'
     },
     {
         id: 151,
@@ -174,7 +192,7 @@ const products = [
         description: '',
         price: 10.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'macarrao.jpeg'
     },
     {
         id: 152,
@@ -183,7 +201,7 @@ const products = [
         description: '',
         price: 8.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'salada.jpeg'
     },
     {
         id: 6001,
@@ -192,8 +210,9 @@ const products = [
         description: '',
         price: 6.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'farofa.jpeg'
     },
+    
 
     // Bebidas
     {
