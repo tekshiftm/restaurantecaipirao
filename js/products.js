@@ -41,7 +41,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 70.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'Filé Medalhão.jpeg'
     },
     {
         id: 4005,
@@ -68,7 +68,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
-        img: 'fileparmegiano.jpeg'
+        img: 'frangoaparmegiana.jpeg'
     },
     {
         id: 4008,
@@ -77,16 +77,7 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'fileparmegiano.jpeg'
-    },
-    {
-        id: 4009,
-        type: 1,
-        name: 'Frango ao Queijo',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 60.00,
-        lastPrice: 0,
-        img: 'frangoaoqueijo.png'
+        img: 'frangoaparmegiana.jpeg'
     },
     {
         id: 4010,
@@ -103,20 +94,20 @@ const products = [
     {
         id: 1,
         type: 2,
-        name: 'Carne de Sol com Batata Frita',
+        name: 'Carne de Sol trinchada com fritas',
         description: '',
         price: 35.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'Carne do sol  trinchada com fritas.png'
     },
     {
         id: 2,
         type: 2,
         name: 'Frango ao Queijo',
-        description: '',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 35.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'frangoaoqueijo1.jpeg'
     },
     {
         id: 3,
@@ -126,6 +117,15 @@ const products = [
         price: 15.00,
         lastPrice: 0,
         img: 'batatafrita.png'
+    },
+    {
+        id: 4,
+        type: 2,
+        name: 'Filé  trinchado com fritas',
+        description: '',
+        price: 0.00,
+        lastPrice: 0,
+        img: 'Filétrinchadocomfritas.jpeg'
     },
 
     // Sobre Encomenda
