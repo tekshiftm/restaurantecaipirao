@@ -127,7 +127,7 @@ const products = [
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 0.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'frangoacaipira.jpeg'
     },
     {
         id: 4012,
@@ -143,9 +143,45 @@ const products = [
         type: 3,
         name: 'Peixe a Delícia EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 0.00,
+        lastPrice: 0,
+        img: 'peixeadelicia.jpg'
+    },
+    {
+        id: 4014,
+        type: 3,
+        name: 'Frango Recheado Desossado EN',
+        description: '[SOBRE ENCOMENDA]',
+        price: 0.00,
+        lastPrice: 0,
+        img: 'frangorecheado.jpeg'
+    },
+    {
+        id: 4015,
+        type: 3,
+        name: 'Pernil EN',
+        description: '[SOBRE ENCOMENDA]',
+        price: 0.00,
+        lastPrice: 0,
+        img: 'pernil.jpeg'
+    },
+    {
+        id: 4013,
+        type: 3,
+        name: 'Porco Recheado EN',
+        description: '[SOBRE ENCOMENDA] Porco recheado e desossado',
+        price: 0.00,
+        lastPrice: 0,
+        img: 'Porcorecheadoedesossado.jpeg'
+    },
+    {
+        id: 4013,
+        type: 3,
+        name: 'Buffet Completo EN',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA, FAROFA e PORCO',
         price: 70.00,
         lastPrice: 0,
-        img: 'favicon.png'
+        img: 'buffetcompleto.jpeg'
     },
 
     // Porções

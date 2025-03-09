@@ -197,7 +197,7 @@ const generateOrder = () => {
     const encodedMessage = encodeURIComponent(message)
 
     // Abrir o WhatsApp Web com a mensagem pré-preenchida
-    window.open(`https://wa.me/5588921458605?text=${encodedMessage}`, '_blank')
+    window.open(`https://wa.me/5588999665156?text=${encodedMessage}`, '_blank')
 }
 
 // Notificações dinâmicas
