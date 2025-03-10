@@ -166,7 +166,7 @@ const products = [
         img: 'pernil.jpeg'
     },
     {
-        id: 4013,
+        id: 4016,
         type: 3,
         name: 'Porco Recheado EN',
         description: '[SOBRE ENCOMENDA] Porco recheado e desossado',
@@ -175,11 +175,11 @@ const products = [
         img: 'Porcorecheadoedesossado.jpeg'
     },
     {
-        id: 4013,
+        id: 4017,
         type: 3,
         name: 'Buffet Completo EN',
         description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA, FAROFA e PORCO',
-        price: 70.00,
+        price: 0.00,
         lastPrice: 0,
         img: 'buffetcompleto.jpeg'
     },

@@ -121,7 +121,7 @@ const chooseDelivery = option => {
         btnWantDelivery.classList.add('active')
         btnDontWantDelivery.classList.remove('active')
 
-        deliveryValue = 3.50
+        deliveryValue = 7.00
     } else {
         btnWantDelivery.classList.remove('active')
         btnDontWantDelivery.classList.add('active')
@@ -168,6 +168,10 @@ const showOnPage = () => {
     showTotal.innerHTML = 'R$ ' + (totalValue - ((totalValue * discountValue) / 100)).toFixed(2).toString().replace('.', ',')
 }
 
+// Obtendo o campo de nome do usuário
+const inputUserName = document.querySelector('#userName')
+
+// Função para gerar o pedido
 const generateOrder = () => {
     const generatedCart = generateCart()
 
@@ -175,9 +179,17 @@ const generateOrder = () => {
         return showNoItemsInCartNotification()
     }
 
+    // Captura o nome do usuário
+    const userName = inputUserName.value.trim()
+
+    // Verifica se o nome foi inserido
+    if (!userName) {
+        return showNameRequiredNotification()
+    }
+
     // Mensagem do pedido
-    let message = '*Pedido:* \n'
-    message += `${getGreeting()} Gostaria de encomendar:\n\n` // Aqui usamos a saudação dinâmica
+    let message = `*Pedido de ${userName}:* \n`  // Incluindo o nome do usuário
+    message += `${getGreeting()} Gostaria de encomendar:\n\n` // Saudação dinâmica
 
     generatedCart.length > 0 && generatedCart.sort((a, b) => a.type < b.type ? -1 : a.type > b.type ? 1 : 0)
 
@@ -200,43 +212,6 @@ const generateOrder = () => {
     window.open(`https://wa.me/5588999665156?text=${encodedMessage}`, '_blank')
 }
 
-// Notificações dinâmicas
-const showAddItemNotification = () => {
-    Toastify({
-        text: "Produto adicionado ao carrinho.",
-        duration: 5000,
-        gravity: "bottom",
-        position: "right",
-        style: {
-            background: "#FF7F0A",
-        }
-    }).showToast()
-}
-
-const showItemRemovedNotification = () => {
-    Toastify({
-        text: "Produto removido do carrinho.",
-        duration: 5000,
-        gravity: "bottom",
-        position: "right",
-        style: {
-            background: "#FF7F0A",
-        }
-    }).showToast()
-}
-
-const showCodeNotFoundNotification = () => {
-    Toastify({
-        text: "Cupom não encontrado.",
-        duration: 5000,
-        gravity: "bottom",
-        position: "right",
-        style: {
-            background: "#FF7F0A",
-        }
-    }).showToast()
-}
-
 const showNoItemsInCartNotification = () => {
     Toastify({
         text: "Não é possível gerar pedido sem itens.",
@@ -248,6 +223,22 @@ const showNoItemsInCartNotification = () => {
         }
     }).showToast()
 }
+
+// Função de notificação caso o nome não tenha sido preenchido
+const showNameRequiredNotification = () => {
+    Toastify({
+        text: "Por favor, insira seu nome antes de gerar o pedido.",
+        duration: 3000,
+        gravity: "bottom",
+        position: "right",
+        style: {
+            background: "#FF7F0A",
+        }
+    }).showToast()
+}
+
+// Adicionando o evento para o botão de gerar pedido
+btnGenerateOrder.addEventListener('click', generateOrder)
 
 btnAddPromotionCode.addEventListener('click', addDiscount)
 btnWantDelivery.addEventListener('click', () => chooseDelivery(true))
