@@ -21,7 +21,7 @@ const products = [
         type: 1,
         name: 'Filé à Parmegiana (1/2)',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 45.00,
+        price: 50.00,
         lastPrice: 0,
         img: 'fileparmegiano.jpeg'
     },
@@ -48,7 +48,7 @@ const products = [
         type: 1,
         name: 'Carne de Sol',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 60.00,
+        price: 55.00,
         lastPrice: 0,
         img: 'carnedesol.png'
     },
@@ -66,9 +66,9 @@ const products = [
         type: 1,
         name: 'Frango à Parmegiana',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 60.00,
+        price: 55.00,
         lastPrice: 0,
-        img: 'frangoaparmegiana.jpeg'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4008,
@@ -77,16 +77,25 @@ const products = [
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
-        img: 'frangoaparmegiana.jpeg'
+        img: 'fileparmegiano.jpeg'
     },
     {
         id: 4010,
         type: 1,
         name: 'Frango Surpresa',
         description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 60.00,
+        price: 55.00,
         lastPrice: 0,
         img: 'frangosurpresa.jpeg'
+    },
+    {
+        id: 4011,
+        type: 1,
+        name: 'Frango ao Queijo',
+        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        price: 55.00,
+        lastPrice: 0,
+        img: 'frangoaoqueijo1.jpeg'
     },
 
 
@@ -101,22 +110,13 @@ const products = [
         img: 'Carne do sol  trinchada com fritas.png'
     },
     {
-        id: 2,
-        type: 2,
-        name: 'Frango ao Queijo',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
-        price: 35.00,
-        lastPrice: 0,
-        img: 'frangoaoqueijo1.jpeg'
-    },
-    {
         id: 3,
         type: 2,
         name: 'Batata Frita',
         description: '',
         price: 15.00,
         lastPrice: 0,
-        img: 'batatafrita.png'
+        img: 'batatafrita.jpeg'
     },
 
     // Sobre Encomenda
@@ -178,7 +178,7 @@ const products = [
         id: 4017,
         type: 3,
         name: 'Buffet Completo EN',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA, FAROFA e PORCO',
+        description: '[SOBRE ENCOMENDA] O evento para sua festa',
         price: 0.00,
         lastPrice: 0,
         img: 'buffetcompleto.jpeg'
@@ -208,7 +208,7 @@ const products = [
         type: 4,
         name: 'Feijão',
         description: '',
-        price: 6.00,
+        price: 5.00,
         lastPrice: 0,
         img: 'feijao.jpeg'
     },
@@ -217,7 +217,7 @@ const products = [
         type: 4,
         name: 'Macarrão',
         description: '',
-        price: 10.00,
+        price: 6.00,
         lastPrice: 0,
         img: 'macarrao.jpeg'
     },
@@ -263,6 +263,24 @@ const products = [
     {
         id: 303,
         type: 5,
+        name: 'Copo de Suco',
+        description: '300 ml de suco',
+        price: 5.00,
+        lastPrice: 0,
+        img: 'suco.jpg'
+    },
+    {
+        id: 304,
+        type: 5,
+        name: 'Jarra com Suco',
+        description: '',
+        price: 15.00,
+        lastPrice: 0,
+        img: 'jarra.jpg'
+    },
+    {
+        id: 305,
+        type: 5,
         name: 'Água sem gás 500ml',
         description: '1 água SEM gás 500ml',
         price: 2.00,
@@ -270,7 +288,7 @@ const products = [
         img: 'aguamineral.png'
     },
     {
-        id: 304,
+        id: 306,
         type: 5,
         name: 'Água com gás 500ml',
         description: '1 água COM gás 500ml',
@@ -279,7 +297,7 @@ const products = [
         img: 'aguamineral.png'
     },
     {
-        id: 305,
+        id: 307,
         type: 5,
         name: 'Cerveja 300ml',
         description: '1 cerveja 300ml',

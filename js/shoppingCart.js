@@ -168,8 +168,9 @@ const showOnPage = () => {
     showTotal.innerHTML = 'R$ ' + (totalValue - ((totalValue * discountValue) / 100)).toFixed(2).toString().replace('.', ',')
 }
 
-// Obtendo o campo de nome do usuário
+// Obtendo o campo de nome do usuário e o campo de observação/adicional
 const inputUserName = document.querySelector('#userName')
+const inputUserObservation = document.querySelector('#userObservation')
 
 // Função para gerar o pedido
 const generateOrder = () => {
@@ -179,8 +180,9 @@ const generateOrder = () => {
         return showNoItemsInCartNotification()
     }
 
-    // Captura o nome do usuário
+    // Captura o nome do usuário e a observação/adicional
     const userName = inputUserName.value.trim()
+    const userObservation = inputUserObservation.value.trim()
 
     // Verifica se o nome foi inserido
     if (!userName) {
@@ -203,6 +205,12 @@ const generateOrder = () => {
     else
         message += '\n*Forma de entrega:* Retirada no local'
 
+    // Adiciona a observação/adicional, se houver
+    if (userObservation) {
+        message += `\n\n*Observações/Adicionais:* ${userObservation}`  // Se houver observação, inclui na mensagem
+    }
+
+    // Adiciona o total no final da mensagem
     message += `\n\n*Total: R$ ${(allItemsValue + deliveryValue - ((allItemsValue + deliveryValue) * discountValue / 100)).toFixed(2).toString().replace('.', ',')}*`
 
     // Encodar mensagem para URL
@@ -211,6 +219,8 @@ const generateOrder = () => {
     // Abrir o WhatsApp Web com a mensagem pré-preenchida
     window.open(`https://wa.me/5588999665156?text=${encodedMessage}`, '_blank')
 }
+
+
 
 const showNoItemsInCartNotification = () => {
     Toastify({
