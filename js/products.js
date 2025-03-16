@@ -272,7 +272,7 @@ const products = [
     {
         id: 304,
         type: 5,
-        name: 'Jarra com Suco',
+        name: 'Jarra de Suco',
         description: '',
         price: 15.00,
         lastPrice: 0,
