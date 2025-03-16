@@ -11,7 +11,7 @@ const products = [
         id: 400,
         type: 1,
         name: 'Filé à Parmegiana',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 60.00,
         lastPrice: 0,
         img: 'fileparmegiano.jpeg'
@@ -20,7 +20,7 @@ const products = [
         id: 4001,
         type: 1,
         name: 'Filé à Parmegiana (1/2)',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 50.00,
         lastPrice: 0,
         img: 'fileparmegiano.jpeg'
@@ -29,7 +29,7 @@ const products = [
         id: 4002,
         type: 1,
         name: 'Filé Surpresa',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 70.00,
         lastPrice: 0,
         img: 'filesurpresa.jpeg'
@@ -38,7 +38,7 @@ const products = [
         id: 4004,
         type: 1,
         name: 'Filé Medalhão',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 70.00,
         lastPrice: 0,
         img: 'Filé Medalhão.jpeg'
@@ -47,7 +47,7 @@ const products = [
         id: 4005,
         type: 1,
         name: 'Carne de Sol',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 55.00,
         lastPrice: 0,
         img: 'carnedesol.png'
@@ -56,7 +56,7 @@ const products = [
         id: 4006,
         type: 1,
         name: 'Carne de Sol (1/2)',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
         img: 'carnedesol12.jpeg'
@@ -65,7 +65,7 @@ const products = [
         id: 4007,
         type: 1,
         name: 'Frango à Parmegiana',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 55.00,
         lastPrice: 0,
         img: 'fileparmegiano.jpeg'
@@ -74,7 +74,7 @@ const products = [
         id: 4008,
         type: 1,
         name: 'Frango à Parmegiana (1/2)',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 45.00,
         lastPrice: 0,
         img: 'fileparmegiano.jpeg'
@@ -83,7 +83,7 @@ const products = [
         id: 4010,
         type: 1,
         name: 'Frango Surpresa',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 55.00,
         lastPrice: 0,
         img: 'frangosurpresa.jpeg'
@@ -92,7 +92,7 @@ const products = [
         id: 4011,
         type: 1,
         name: 'Frango ao Queijo',
-        description: 'ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 55.00,
         lastPrice: 0,
         img: 'frangoaoqueijo1.jpeg'
@@ -124,7 +124,7 @@ const products = [
         id: 4011,
         type: 3,
         name: 'Frango Caipira (À Cabidela) EN',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 0.00,
         lastPrice: 0,
         img: 'frangoacaipira.jpeg'
@@ -133,7 +133,7 @@ const products = [
         id: 4012,
         type: 3,
         name: 'Peixe Frito EN',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 0.00,
         lastPrice: 0,
         img: 'peixefritoen.png'
@@ -142,7 +142,7 @@ const products = [
         id: 4013,
         type: 3,
         name: 'Peixe a Delícia EN',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARÃO, VERDURA E FAROFA',
+        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
         price: 0.00,
         lastPrice: 0,
         img: 'peixeadelicia.jpg'
