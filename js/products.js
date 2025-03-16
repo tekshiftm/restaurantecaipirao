@@ -190,7 +190,7 @@ const products = [
         type: 4,
         name: 'Arroz Branco',
         description: '',
-        price: 8.00,
+        price: 7.00,
         lastPrice: 0,
         img: 'arrozbranco.jpeg'
     },
