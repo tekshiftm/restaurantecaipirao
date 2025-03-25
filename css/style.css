@@ -39,7 +39,7 @@ h1 {
 }
 
 h1 span {
-  color: #FF7F0A;
+  color: #A90E0E;
 }
 
 h3 {
@@ -133,7 +133,7 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
-  background: #A90E0E;
+  background: #D97706;
   width: 100%;
   padding: 20px 0;
 }
@@ -252,7 +252,7 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #A90E0E;
+  border: 2px solid #e88112;
 }
 
 .navbar .itemsMobile {
@@ -274,7 +274,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 55px 0;
-  background: #A90E0E;
+  background: #e88112;
   width: 65%;
   height: 100vh;
   -webkit-box-shadow: 0 0 150px 0 rgba(0, 0, 0, 0.15);
@@ -311,7 +311,7 @@ a {
 }
 
 .banner {
-  background: #A90E0E;
+  background: #e88112;
   width: 100%;
   height: 100vh;
 }
@@ -782,7 +782,7 @@ a {
 }
 
 .footerBottom {
-  background: #A90E0E;
+  background: #D97706;
 }
 
 .footerBottom .content {
