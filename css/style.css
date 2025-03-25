@@ -35,7 +35,7 @@ h1 {
   font-weight: 800;
   font-size: 3.5rem;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #A90E0E;
 }
 
 h1 span {
@@ -311,14 +311,14 @@ a {
 }
 
 .banner {
-  background: #e88112;
+  background: #fdfdfd;
   width: 100%;
   height: 100vh;
 }
 
 .banner #subtitle {
   margin: 15px 0 25px 0;
-  color: #FAFAFA;
+  color: #D97706;
 }
 
 .banner .bannerContent {
