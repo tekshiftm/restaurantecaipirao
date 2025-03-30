@@ -1,70 +1,190 @@
 // Types:
-// 1 = Refeições
+// 1 = Tapioca
 // 2 = Tira Gosto
 // 3 = Sobre Encomenda
 // 4 = Porções
 // 5 = Bebidas
 
 const products = [
-    // Refeições
+    // Tapioca
     {
         id: 400,
         type: 1,
-        name: 'Filé à Parmegiana',
-        description: 'ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
-        price: 60.00,
-        lastPrice: 0,
-        img: 'fileparmegiano.jpeg'
-    },
-
-
-
-    // Tira Gosto
-    {
-        id: 1,
-        type: 2,
-        name: 'Carne de Sol trinchada com fritas',
+        name: 'Tapioca com Manteiga',
         description: '',
-        price: 35.00,
+        price: 5.00,
         lastPrice: 0,
-        img: 'Carne do sol  trinchada com fritas.png'
+        img: 'tapiocacommanteiga.jfif'
     },
-
-
-    // Sobre Encomenda
     {
-        id: 4011,
-        type: 3,
-        name: 'Frango Caipira (À Cabidela) EN',
-        description: '[SOBRE ENCOMENDA] ARROZ, FEIJÃO, MACARRÃO, VERDURA E FAROFA',
-        price: 0.00,
-        lastPrice: 0,
-        img: 'frangoacaipira.jpeg'
-    },
-
-
-    // Porções
-    {
-        id: 150,
-        type: 4,
-        name: 'Arroz Branco',
+        id: 401,
+        type: 1,
+        name: 'Tapioca com Ovo',
         description: '',
         price: 7.00,
         lastPrice: 0,
-        img: 'arrozbranco.jpeg'
+        img: 'tapiocacomovo.jfif'
+    },
+    {
+        id: 402,
+        type: 1,
+        name: 'Tapioca com Queijo',
+        description: '',
+        price: 7.00,
+        lastPrice: 0,
+        img: 'tapiocacomqueijo.jfif'
+    },
+    {
+        id: 403,
+        type: 1,
+        name: 'Tapioca com Ovo e Queijo',
+        description: '',
+        price: 9.00,
+        lastPrice: 0,
+        img: 'tapiocacomovoequeijo.jfif'
+    },
+    {
+        id: 404,
+        type: 1,
+        name: 'Tapioca com Carne Moída',
+        description: '',
+        price: 7.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnemoida.jfif'
+    },
+    {
+        id: 405,
+        type: 1,
+        name: 'Tapioca com Carne Moída e Queijo',
+        description: '',
+        price: 9.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnemoidaqueijo.jpg'
+    },
+    {
+        id: 406,
+        type: 1,
+        name: 'Tapioca com Carne Moída e Ovo',
+        description: '',
+        price: 9.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnemoidaovo.png'
+    },
+    {
+        id: 407,
+        type: 1,
+        name: 'Tapioca com Carne Moída, Queijo e Ovo',
+        description: '',
+        price: 11.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnemoidaqueijoovo.jfif'
+    },
+    {
+        id: 408,
+        type: 1,
+        name: 'Tapioca com Frango',
+        description: '',
+        price: 7.00,
+        lastPrice: 0,
+        img: 'tapiocacomfrango.jpg'
+    },
+    {
+        id: 409,
+        type: 1,
+        name: 'Tapioca com Frango e Queijo',
+        description: '',
+        price: 9.00,
+        lastPrice: 0,
+        img: 'tapiocacomfrangoqueijo.jpg'
+    },
+    {
+        id: 410,
+        type: 1,
+        name: 'Tapioca com Frango e Ovo',
+        description: '',
+        price: 9.00,
+        lastPrice: 0,
+        img: 'tapiocacomfrangoovo.jfif'
+    },
+    {
+        id: 411,
+        type: 1,
+        name: 'Tapioca com Frango, Queijo e Ovo',
+        description: '',
+        price: 11.00,
+        lastPrice: 0,
+        img: 'tapiocacomfrangoqueijoovo.png'
+    },
+    {
+        id: 412,
+        type: 1,
+        name: 'Tapioca com Carne de Sol',
+        description: '',
+        price: 8.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnedesol.jpg'
+    },
+    {
+        id: 413,
+        type: 1,
+        name: 'Tapioca com Carne de Sol e Queijo',
+        description: '',
+        price: 10.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnedesolqueijo.webp'
+    },
+    {
+        id: 414,
+        type: 1,
+        name: 'Tapioca com Carne de Sol e Ovo',
+        description: '',
+        price: 10.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnedesolovo.jpg'
+    },
+    {
+        id: 415,
+        type: 1,
+        name: 'Tapioca com Carne de Sol, Queijo e Ovo',
+        description: '',
+        price: 12.00,
+        lastPrice: 0,
+        img: 'tapiocacomcarnedesolqueijoovo.webp'
     },
 
-    
 
-    // Bebidas
+
+    // REFRIGERANTE
+
+
+
+    // ÁGUA
     {
-        id: 301,
-        type: 5,
-        name: 'Coca-Cola Lata',
-        description: '1 coca-cola lata.',
+        id: 150,
+        type: 7,
+        name: 'Água Sem Gas 500ML',
+        description: '',
+        price: 3.00,
+        lastPrice: 0,
+        img: 'aguamineral.png'
+    },
+    {
+        id: 151,
+        type: 7,
+        name: 'Água Com Gas 500ML',
+        description: '',
+        price: 4.00,
+        lastPrice: 0,
+        img: 'aguamineral.png'
+    },
+    {
+        id: 152,
+        type: 7,
+        name: 'Água Sem Gas 1,5L',
+        description: '',
         price: 5.00,
         lastPrice: 0,
-        img: 'cocacola.png'
+        img: 'aguamineral15litro.png'
     },
 
 ];

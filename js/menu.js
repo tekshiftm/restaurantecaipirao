@@ -7,6 +7,8 @@ const showCombos = document.querySelector('#showCombos');
 const showPortions = document.querySelector('#showPortions');
 const showDrinks = document.querySelector('#showDrinks');
 const showMeals = document.querySelector('#showMeals');
+const showSodas = document.querySelector('#showSodas');
+const showWater = document.querySelector('#showWater');
 
 let items;
 
@@ -26,6 +28,8 @@ const removeClasses = () => {
     showPortions.classList.remove('active');
     showDrinks.classList.remove('active');
     showMeals.classList.remove('active');
+    showSodas.classList.remove('active');
+    showWater.classList.remove('active');
 }
 
 const checkIfHaveItem = items => {
@@ -86,6 +90,10 @@ const showProducts = type => {
         showDrinks.classList.add('active');
     else if (type === 1)
         showMeals.classList.add('active');
+    else if (type === 6)
+        showSodas.classList.add('active');
+    else if (type === 7)
+        showWater.classList.add('active');
 }
 
 const allPromotions = () => {
@@ -129,8 +137,8 @@ showSnacks.addEventListener('click', function () { showProducts(2); });
 showCombos.addEventListener('click', function () { showProducts(3); });
 showPortions.addEventListener('click', function () { showProducts(4); });
 showDrinks.addEventListener('click', function () { showProducts(5); });
-
-
+showSodas.addEventListener('click', function () { showProducts(6); });
+showWater.addEventListener('click', function () { showProducts(7); });
 
 showProducts(0);
 allPromotions();
